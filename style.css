@@ -1,0 +1,638 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+
+
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.mobpara{
+    display: none;
+}
+
+nav .fas {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    #dev{
+        margin-top: 50px;
+    }
+
+    #button1{
+        margin-top: 50px;
+    }
+    #mayank{
+        position: absolute;
+       left: 90%;
+        top: 17%;
+       
+    }
+   
+    #para0{
+        position: absolute;
+        top: 110%;
+        font-size:small;
+        
+        
+        left: 15%;
+        right: 10%;
+    
+       
+
+    }
+    #paramob{
+        display: block;
+   
+      
+      
+    }
+
+    .about{
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        flex-wrap: nowrap;
+        
+    }
+
+    #secimage{
+        position:absolute;
+        top: 110%;
+        margin: 70px;
+        
+    }
+   
+
+    
+}
+
+
+    
+#paramob{
+    display: none;
+}
+
+
+
+#navbar {
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    margin-top: 2%;
+    padding-right: 10%;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.nav {
+    margin: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: transparent;
+
+}
+
+#logo {
+    background-color: transparent;
+}
+
+#logo:hover {
+    transform: scale(1.1);
+}
+
+#mayank {
+    position: absolute;
+    left: 70%;
+    transition: transform 0.3s ease;
+    background-color: transparent;
+    border-bottom: transparent;
+    border-radius: 50%;
+    border-bottom: transparent;
+    border-radius: 50%;
+
+}
+
+#mayank:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+#front {
+    position: absolute;
+    top: 57%;
+    left: 10%;
+
+
+}
+
+#hello {
+    position: absolute;
+    left: 10%;
+    color: white;
+    top: 40%;
+    font-size: larger;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#dev {
+    display: flex;
+    justify-content: first baseline;
+    color: yellow;
+    background-color: transparent;
+}
+
+#para {
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+#name {
+    color: cyan;
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    font-size: xx-large;
+    font-weight: 800;
+    word-wrap: break-word;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+
+
+#navbar nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    height: 100%;
+    position: sticky;
+}
+
+#navbar img {
+    height: 100%;
+    object-fit: contain;
+}
+
+.nav {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+.nav:hover {
+
+    color: yellow;
+}
+
+#button1 {
+    width: 150px;
+    height: 50px;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 72%;
+    left: 10%;
+    cursor: pointer;
+    
+    transition: background-color 0.3s, color 0.3s;
+
+}
+
+#button1:hover {
+    background-color: #f8fc25;
+    color: #0095ff;
+    transform: scale(1.1);
+}
+
+#myprojects {
+    position: absolute;
+    top: 180%;
+    left: 42%;
+    font-size: x-large;
+    text-decoration: underline;
+
+}
+
+#boxx {
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    top: 185%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    font-style: bold;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 50px;
+
+}
+
+#box1 {
+    width: 300px;
+    height: 250px;
+    
+
+
+}
+
+#headingport {
+    position: relative;
+    left: 32%;
+
+}
+
+#portfolioimg {
+    width: 100%;
+    height: 220px;
+}
+
+#box2 {
+    width: 300px;
+    height: 250px;
+    border: 2px solid rgb(255, 255, 255);
+
+
+}
+
+#ecommerceheading {
+    position: relative;
+    left: 27%;
+}
+
+
+#ecom {
+
+    width: 100%;
+    height: 220px;
+}
+
+#box3 {
+    width: 300px;
+    height: 250px;
+    border: 2px solid rgb(255, 255, 255);
+
+
+
+}
+
+#pcheading {
+    position: relative;
+    left: 20%;
+}
+
+.pinkcrown {
+    width: 296px;
+    height: 220px;
+
+}
+
+#box1, #box2, #box3 {
+    width: 300px;
+    height: 250px;
+    border: 2px solid rgb(255, 255, 255);
+    position: relative;
+    overflow: hidden; /* Ensures the overlay stays within the box */
+    transition: height 0.5s ease-in-out; /* Smooth scaling effect on hover */
+}
+
+#box1:hover, #box2:hover, #box3:hover {
+    transform: scale(1.05); /* Slightly scales up the box on hover */
+    cursor: pointer;
+    color: yellow;
+}
+
+#box1::before, #box2::before, #box3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(25, 186, 211, 0.2); /* Black with 20% opacity */
+    opacity: 0;
+    transition: height 0.9s ease-in-out;
+}
+
+#box1:hover::before, #box2:hover::before, #box3:hover::before {
+    opacity: 1; /* Shows the overlay on hover */
+}
+
+/* Adjusting heading alignment within the boxes */
+#headingport, #ecommerceheading, #pcheading {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 1.2em;
+    z-index: 1; /* Ensure text is above the overlay */
+}
+
+#headingport:hover , #ecommerceheading:hover , #pcheading:hover {
+    color: yellow;
+}
+
+
+
+
+
+#aboutme {
+    color: white;
+    position: absolute;
+    top: 130%;
+    left: 45%;
+    font-size: xx-large;
+    text-decoration: underline;
+
+}
+
+#para0 {
+    position: absolute;
+    top: 145%;
+    font-size: x-large;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    left: 15%;
+    right: 10%;
+    background-color: rgb(46, 43, 43);
+    border-radius: 80%;
+
+
+
+}
+
+#secimage {
+    position: absolute;
+    top: 137%;
+    z-index: -1;
+    left: 3%;
+    height: 300px;
+    border-bottom: transparent;
+    border-radius: 50%;
+
+}
+
+#secimage:hover {
+    transform: scale(1.1);
+
+}
+
+
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#bgVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    
+}
+
+
+body,
+html {
+    position: relative;
+    z-index: 1;
+}
+
+.custom-icon {
+    font-size: 40px;
+}
+
+#icons {
+    position: absolute;
+    left: 45%;
+    top: 85%;
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+
+}
+
+.xicon {
+    font-size: 40px;
+}
+
+.github {
+    font-size: 40px;
+}
+
+.mail {
+    font-size: 40px;
+}
+
+#twitter:hover {
+    transform: scale(1.5);
+}
+
+#maill:hover {
+    transform: scale(1.5);
+}
+
+#githubb:hover {
+    transform: scale(1.5);
+}
+
+#linked:hover {
+    transform: scale(1.5);
+}
+
+#para0:hover {
+    cursor: pointer;
+    transform: scale3d(1.5);
+
+}
+
+
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    top: 300%;
+    text-decoration: underline;
+}
+
+#html,
+#CSS,
+#JS,
+#react,
+#boot,
+#tail,
+#responsive,
+#graphic,
+#figma,
+#canva {
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    flex-direction: column;
+    
+    gap: 10px;
+    
+}
+
+#html img,
+#CSS img,
+#JS img,
+#react img,
+#boot img,
+#tail img,
+#responsive img,
+#graphic img,
+#figma img,
+#canva img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#skl {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#html img:hover {
+    transform: scale(1.2);
+}
+
+#CSS img:hover {
+    transform: scale(1.2);
+}
+
+#JS img:hover {
+    transform: scale(1.2);
+}
+
+#react img:hover {
+    transform: scale(1.2);
+}
+
+#boot img:hover {
+    transform: scale(1.2);
+}
+
+#tail img:hover {
+    transform: scale(1.2);
+}
+
+#responsive img:hover {
+    transform: scale(1.2);
+}
+
+#graphic img:hover {
+    transform: scale(1.2);
+}
+
+
+#figma img:hover {
+    transform: scale(1.2);
+}
+
+#canva img:hover {
+    transform: scale(1.2);
+}
+
+.contactt {
+    position: absolute;
+    left: 37%;
+    top: 390%;
+    display: flex;
+    color: yellow;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+#contacticon {
+    font-size: 55px;
+    display: flex;
+   
+}
+
+.ico {
+    display: inline-block;
+    position: relative;
+    left: 20px;
+    padding: 10px;
+
+}
+
+#whatsapp:hover {
+    transform: scale(1.3);
+}
+
+#linkedinn:hover {
+    transform: scale(1.3);
+}
+
+#mailto:hover {
+    transform: scale(1.3);
+}
+
+.contactt1 {
+    
+    left: 30%;
+    top: 390%;
+    display: flex;
+    color: yellow;
+    font-weight: bold;
+}
+
+#box4{
+    width: 300px;
+    height: 250px;
+    border: 2px solid rgb(255, 255, 255);
+    
+}
+
+#box5{
+    width: 300px;
+    height: 250px;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+#box6{
+    width: 300px;
+    height: 250px;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+#box4:hover , #box5:hover , #box6:hover{
+    transform: scale(1.1);
+    background-color: rgba(25, 186, 211, 0.2);
+}
